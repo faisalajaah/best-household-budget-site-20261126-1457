@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rumah Tangga — Anggaran Keluarga</title>
+<meta name="description" content="Rumah Tangga: situs anggaran rumah tangga — pantau pemasukan, pengeluaran, tagihan, dan tabungan keluarga dalam Rupiah.">
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="views.js" defer></script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30"><path d="M16 3 3 15h4v13h8v-9h2v9h8V15h4L16 3z" fill="#f7f3ea"/><circle cx="16" cy="14" r="2.4" fill="#c05a2e"/></svg>
+      </span>
+      <span class="brand-text"><strong>Rumah Tangga</strong><small>Anggaran keluarga · Rupiah</small></span>
+    </a>
+    <div class="month-switch" role="group" aria-label="Pilih bulan">
+      <button id="month-prev" type="button" aria-label="Bulan sebelumnya">‹</button>
+      <span id="month-label">November 2026</span>
+      <button id="month-next" type="button" aria-label="Bulan berikutnya">›</button>
+    </div>
+  </div>
+  <nav class="wrap mainnav" aria-label="Navigasi utama">
+    <a href="#/" data-route="">Ringkasan</a>
+    <a href="#/transactions" data-route="transactions">Transaksi</a>
+    <a href="#/budget" data-route="budget">Anggaran</a>
+    <a href="#/goals" data-route="goals">Tabungan</a>
+    <a href="#/bills" data-route="bills">Tagihan</a>
+    <a href="#/reports" data-route="reports">Laporan</a>
+  </nav>
+</header>
+<main id="app" class="wrap"></main>
+<footer class="wrap site-footer">
+  <p><strong>Rumah Tangga</strong> — dibuat untuk keluarga yang mengatur uangnya sendiri. Semua angka dalam Rupiah; data tersimpan di peramban ini dan tidak dikirim ke mana pun.</p>
+  <p class="fine">Keluarga Prasetyo · Dua pencari nafkah · Periode November 2026 · Anggaran bulanan Rp 9.300.000 dari pemasukan Rp 14.500.000.</p>
+</footer>
+</body>
+</html>
